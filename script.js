@@ -1,3 +1,4 @@
+document.documentElement.classList.add('js');
 const header = document.querySelector('.header');
 const menuButton = document.querySelector('#menuButton');
 const mobileMenu = document.querySelector('#mobileMenu');

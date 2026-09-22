@@ -119,8 +119,8 @@ button {
 
 .logo-icon {
 
-    width: 44px;
-    height: 44px;
+    width: 55px;
+    height: 55px;
 
     display: flex;
 
@@ -391,7 +391,7 @@ button {
 
     inset: 0;
 
-    background-image: url("/oficina.jpeg");
+    background-image: url("./images/oficina.jpeg");
 
     background-position: center;
 
@@ -422,8 +422,8 @@ button {
     background:
         linear-gradient(to top,
             var(--black),
-            transparent 55%,
-            rgba(5, 5, 5, 0.6));
+            transparent 95%,
+            rgba(5, 5, 5, 0.7));
 }
 
 .hero-container {
@@ -655,9 +655,10 @@ button {
     color: var(--yellow);
 
     font-size: 27px;
-
+ 
     transition: 0.3s;
 }
+
 
 .service-card:hover .service-icon {
 
@@ -665,6 +666,7 @@ button {
 
     color: var(--black);
 }
+
 
 .service-card h3 {
 
@@ -872,7 +874,7 @@ button {
 
 .contact-grid {
 
-    margin-top: 60px;
+    margin-top: 30px;
 
     display: grid;
 
@@ -887,12 +889,17 @@ button {
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 16px;
+    gap: 18px;
 }
 
 .contact-card {
 
-    padding: 25px;
+
+    width: 290px;
+    height: 310px;
+
+
+    padding: 30px;
 
     border: 1px solid rgba(245, 245, 245, 0.1);
 
@@ -903,8 +910,8 @@ button {
 
 .contact-icon {
 
-    width: 44px;
-    height: 44px;
+    width: 54px;
+    height: 54px;
 
     display: flex;
 
@@ -939,7 +946,7 @@ button {
 
     font-size: 14px;
 
-    font-weight: 600;
+    font-weight: 200;
 }
 
 .placeholder {
@@ -959,9 +966,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    padding: 50px;
-
-    border: 1px dashed rgba(255, 212, 0, 0.3);
+    padding: 10px;
 
     border-radius: 12px;
 
@@ -1241,22 +1246,19 @@ button {
 /* =========================
    ANIMAÇÃO REVEAL
 ========================= */
-
 .reveal {
-
-    opacity: 0;
-
-    transform: translateY(28px);
-
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.reveal.is-visible {
+.js .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
 
+.js .reveal.is-visible {
     opacity: 1;
-
     transform: translateY(0);
 }
 
