@@ -1,6 +1,7 @@
 # morada pneus 
 
-esse projeto foi desenvolvido fazendo treinamento de uma video aula,
+esse projeto foi desenvolvido fazendo treinamento de uma video aula.
+
  
 ## Tecnologias ultilizadas
 
